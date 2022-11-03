@@ -1,4 +1,4 @@
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import * as API from '../services/api';
 import styled from 'styled-components';
@@ -11,7 +11,7 @@ const Item = styled.li`
 export const Cast = () => {
   const params = useParams();
   const [cast, setCast] = useState();
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     async function getMovieById() {

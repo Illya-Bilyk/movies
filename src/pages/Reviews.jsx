@@ -1,11 +1,10 @@
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import * as API from '../services/api';
 
 export const Reviews = () => {
   const params = useParams();
   const [reviews, setReviews] = useState();
-  const location = useLocation();
 
   useEffect(() => {
     async function getMovieById() {
